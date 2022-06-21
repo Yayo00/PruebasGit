@@ -1,0 +1,46 @@
+//Agregar usuario
+git config --global user.name "carlogilmar"
+
+git config --global user.email "carlo@makingdevs.com"
+
+//Ver configuración
+
+git config user.name
+
+git config user.email
+
+//Sacar archivos del stage area y regresarlo al working
+
+git rm --cached <archivo>
+
+//Ver status en local repository
+
+git log
+
+//Ver diferencias en un archivo
+
+git diff <archivo>
+
+//Descartar modificaciones en un archivo ya commiteado, NOTA: no es posible rescatar modificaciones una vez descartadas
+
+git checkout -- <archivo_modificado>
+
+//Guarda los cambios del working directory en una pila temporal sin ser enviados al stage
+
+git stash
+
+//Devolver los cambios al working directory
+
+git stash pop
+
+//Deshacer commits
+
+git reset HEAD~n      n = número de commit (empieza por el último commit realizado)
+
+//Deshacer cambios de commit
+
+git reset --hard HEAD~n
+
+//Modificar descripción del último commit
+
+git commit --amend -m "Descripción nueva"
